@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="public/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="public/styles.css" />
+  <link href='https://fonts.google.com/specimen/Kumbh+Sans' rel='stylesheet'>
+  <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="navbar">
+      <img class="menu" src="images/icon-menu.svg" /></img>
+      <img id="logo" src="images/logo.svg">
+      </img>
+
+      <a href="">Collections</a>
+      <a href="">Men</a>
+      <a href="">Women</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
+      <button class="cart" type ="button">
+        <img class="cart-image" src="images/icon-cart.svg" />
+        </img>
+      </button>
+      <button class="profile-image" type ="button">
+        <img class="avatar" src="images/image-avatar.png" /></img>
+      </button>
+
+    </div>
+    <div class="main">
+      <div class="images">
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="large-image" id="fullImage" src="images/image-product-1.jpg" /></img>
+            </div>
+          </div>
+          <button class="btnPrevious" type="button">
+            <img class="previous" src="images/icon-previous.svg" /></img>
+          </button>
+
+          <button class="btnNext" type="button">
+            <img class="next" src="images/icon-next.svg" /></img>
+          </button>
+
+        </div>
+
+        <div class="thumbnail-image">
+          <img class="small-image" src="images/image-product-1-thumbnail.jpg" /></img>
+          <img class="small-image" src="images/image-product-2-thumbnail.jpg" /></img>
+          <img class="small-image" src="images/image-product-3-thumbnail.jpg" /></img>
+          <img class="small-image" src="images/image-product-4-thumbnail.jpg" /></img>
+        </div>
+
+      </div>
+      <div class="info">
+        <div class="about_product">
+          <h3>SNEAKER COMPANY</h3>
+          <h2>Fall Limited Edition Sneakers</h2>
+          <p>
+            These low profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole they'll withstand everything the weather can offer.
+          </p>
+          <div class="display-cost">
+            <div class="price">
+              <h3 class="cost">$125.00</h3>
+              <h3 class="discount">50%</h3>
+            </div>
+            <p class="orignal-cost">
+              $250.00
+            </p>
+          </div>
+
+        </div>
+        <div class="buttons">
+          <div class="quantity">
+            <button class="btnMinus" type="button" name="button">
+              <img src="images/icon-minus.svg" /></img>
+            </button>
+
+            <button class="addQty" type="button" name="button">0</button>
+            <button class="btnPlus" type="button" name="button">
+              <img src="images/icon-plus.svg" /></img>
+            </button>
+          </div>
+          <button class="addToCart" type="button">
+            <i class="addToCartIcon fa fa-cart-shopping"></i>
+            Add to cart</button>
+
+        </div>
+      </div>
+      <div class="cart-container">
+        <div class="cart-nav">
+          <p class="cart-heading">  Cart  </p>
+        </div>
+        <div class="cart-main">
+          <h2 class="empty-cart">  Your cart is empty.</h2>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Daljeet Kaur</a>.
+  </div>
+  <script src="app.js"></script>
+
+
+</body>
+
+</html>

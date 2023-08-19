@@ -1,0 +1,182 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+  /* present in every section so refactor it to body*/
+}
+
+/*containers*/
+.container-fluid {
+  padding: 7% 15%;
+  /* top left bottom*/
+}
+
+/*Headings*/
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5em;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* combining multiple selectors*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+  /* refactor code by adding common font-family to single line*/
+}
+
+.section-heading {
+  color: black;
+  font-size: 3rem;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: bold;
+}
+
+/*Sections*/
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+  /*will not make nay chnges  give whit to ensure its not transparent*/
+}
+
+/*Navugation bar*/
+.navbar {
+  padding: 0 0 4.5rem;
+  /*set top rigt to 0 and bottom to 4.5  to make headung align to content */
+}
+
+.navbar-brand {
+  /* design tindog brand*/
+  font-family: "Ubuntu";
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
+}
+
+/*Download buttons*/
+.downlaod-button {
+  margin: 5% 3% 5% 0;
+  /* give distance between two buttons*/
+}
+
+/*Title section*/
+#title {
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  /* Container fluid give this different padding only its inside title section
+  hierarchial selectors read it from right to left i.e  .container-fluid is child and #title is parent
+  provide space b/w parent and child to represent parent and child relationship
+  */
+}
+
+/*Title Image*/
+.title-image {
+  width: 60%;
+  transform: rotate(15deg);
+  position: absolute;
+  /*to make image hide behind features section*/
+  right: 30%;
+}
+
+/*Features section*/
+#features {
+  position: relative;
+  /* z-index work only if position is defined even if ot define z-index it will be at front
+                       ,explained in z-index flow*/
+}
+
+.feature-heading {
+  font-size: 1.2rem;
+}
+
+.feature-box {
+  /* each column*/
+  padding: 5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+p {
+  color: grey;
+}
+
+/*Testimonials Section*/
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/*press section*/
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/*Pricing section*/
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+  color: Black;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/*footer section*/
+.social-icon {
+  margin: 20px 10px;
+}
+
+/* @media query works only if certain condition met like when max width changes to 1028 px then titile image size changes*/
+@media (max-width:1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
